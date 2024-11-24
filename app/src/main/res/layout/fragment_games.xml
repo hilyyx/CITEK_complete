@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomnav.games.GamesFragment">
+
+    <ImageView
+        android:id="@+id/game_up"
+        android:layout_width="170dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/game_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wifi_iv"
+        android:layout_width="316dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/wifi_bt_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_up" />
+
+    <ImageButton
+        android:id="@+id/game_wifi_btn"
+        android:layout_width="254dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/igrat"
+        app:layout_constraintBottom_toBottomOf="@+id/wifi_iv"
+        app:layout_constraintEnd_toEndOf="@+id/wifi_iv"
+        app:layout_constraintStart_toStartOf="@+id/wifi_iv" />
+
+    <ImageView
+        android:id="@+id/itquiz_iv"
+        android:layout_width="316dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/itquiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wifi_iv" />
+
+    <ImageButton
+        android:id="@+id/itquiz_btn"
+        android:layout_width="254dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/igrat"
+        app:layout_constraintBottom_toBottomOf="@+id/itquiz_iv"
+        app:layout_constraintEnd_toEndOf="@+id/itquiz_iv"
+        app:layout_constraintStart_toStartOf="@+id/itquiz_iv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
