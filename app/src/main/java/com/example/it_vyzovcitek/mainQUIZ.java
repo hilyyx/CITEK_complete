@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -235,10 +236,18 @@ public class mainQUIZ extends AppCompatActivity {
     }
 
     private void showExplanationDialog(String explanation) {
-        // Создаем диалоговое окно для пояснения
+        // Загружаем кастомный layout
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_message, null);
+
+        // Получаем ссылку на TextView в кастомном layout
+        TextView messageTextView = dialogView.findViewById(R.id.dialog_message);
+        messageTextView.setText(explanation);
+
+        // Создаем диалог с кастомным layout
         new AlertDialog.Builder(this)
                 .setTitle("Пояснение")
-                .setMessage(explanation)
+                .setView(dialogView) // Устанавливаем кастомный layout
                 .setPositiveButton("ОК", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -253,5 +262,6 @@ public class mainQUIZ extends AppCompatActivity {
                 .setCancelable(false) // Окно нельзя закрыть без нажатия на кнопку
                 .show();
     }
+
 
 }
