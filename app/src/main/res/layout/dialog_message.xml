@@ -13,4 +13,13 @@
         android:textSize="20sp"
         android:textColor="#000000"
         android:lineSpacingExtra="2sp"/>
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo_citek" />
+
 </LinearLayout>
