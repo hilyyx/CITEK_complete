@@ -22,7 +22,6 @@ public class QuizFragment extends Fragment {
     private ImageButton nextButton;
 
     private CheckBox low12, bow12;
-    private int age;
 
     @Nullable
     @Override
@@ -34,21 +33,32 @@ public class QuizFragment extends Fragment {
         bow12 = view.findViewById(R.id.bow12);
         nextButton = view.findViewById(R.id.nextButton);
 
+        // Установим слушатели для обоих CheckBox
+        low12.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                bow12.setChecked(false); // Снимаем выбор с другого CheckBox
+            }
+        });
+
+        bow12.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                low12.setChecked(false); // Снимаем выбор с другого CheckBox
+            }
+        });
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String selectedCheckBox = "";
-                if (low12.isChecked() && bow12.isChecked()) {
-                    Toast.makeText(getContext(), "Выберите только один вариант!", Toast.LENGTH_SHORT).show();
-                    return;
-                } else if (low12.isChecked()) {
+                if (low12.isChecked()) {
                     selectedCheckBox = "low12";
                 } else if (bow12.isChecked()) {
                     selectedCheckBox = "bow12";
-                } else if (!low12.isChecked() && !bow12.isChecked()){
+                } else {
                     Toast.makeText(getContext(), "Выберите один из вариантов", Toast.LENGTH_SHORT).show();
-                    return; // Don't proceed if nothing is selected
+                    return; // Не переходим дальше, если ничего не выбрано
                 }
+
                 Intent intent = new Intent(getActivity(), mainQUIZ.class);
                 intent.putExtra("selectedCheckBox", selectedCheckBox);
                 startActivity(intent);
