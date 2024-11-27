@@ -21,6 +21,7 @@ import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.example.it_vyzovcitek.APIActivity;
+import com.example.it_vyzovcitek.ChatActivity;
 import com.example.it_vyzovcitek.LoginActivity;
 import com.example.it_vyzovcitek.PassActivity;
 import com.example.it_vyzovcitek.databinding.FragmentProfileBinding;
@@ -57,6 +58,12 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileFragment.this.getActivity(), APIActivity.class));
+            }
+        });
+        binding.chatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileFragment.this.getActivity(), ChatActivity.class));
             }
         });
         binding.passBtn.setOnClickListener(new View.OnClickListener() {
