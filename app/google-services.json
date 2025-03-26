@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568629283663",
+    "project_id": "citek-74ab6",
+    "storage_bucket": "citek-74ab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568629283663:android:2411886f4c69031b35d33a",
+        "android_client_info": {
+          "package_name": "com.example.it_vyzovcitek"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDHZJ0GJqygavw2X8ea-DW9DAqrCgHB7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

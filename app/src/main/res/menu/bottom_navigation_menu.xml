@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/baseline_auto_awesome_24"
+        android:title="Квиз" />
+    <item
+        android:id="@+id/games"
+        android:icon="@drawable/baseline_games_24"
+        android:title="Игры" />
+
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/outline_rate_24"
+        android:title="Рейтинг" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Профиль" />
+
+</menu>
+
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".play_me">
+
+    <ImageButton
+        android:id="@+id/vverx"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:rotation="270"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_black" />
+
+    <ImageView
+        android:id="@+id/verx"
+        android:layout_width="410dp"
+        android:layout_height="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/verxx" />
+
+    <ImageButton
+        android:id="@+id/ubrat"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verx"
+        app:srcCompat="@drawable/verxobr" />
+
+    <ImageButton
+        android:id="@+id/wifi_off"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wifi_off" />
+
+    <ImageButton
+        android:id="@+id/bluetooth_off"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bluetooth_off" />
+
+    <ImageButton
+        android:id="@+id/disturb_off"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="184dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/disturb_off" />
+
+    <ImageButton
+        android:id="@+id/geo_off"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/geo_off" />
+
+    <ImageButton
+        android:id="@+id/wifi"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wifi" />
+
+    <ImageButton
+        android:id="@+id/bluetooth"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bluetooth" />
+
+    <ImageButton
+        android:id="@+id/disturb"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="184dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/disturb" />
+
+    <ImageButton
+        android:id="@+id/geo"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/geo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="353dp"
+        android:layout_height="267dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:text="На этом экране тебе необходимо выключить WIFI и Bluetooth, чтобы обезопасить себя и свое устройство"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
